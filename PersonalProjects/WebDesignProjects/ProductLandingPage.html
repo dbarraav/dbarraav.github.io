@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="css-files/ProductLandingPage.css">
+    <header id="header">
+        <div id="header-img-div">
+            <img id="header-img" src="ml-image.png">
+        </div>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#ml-uses">ML Uses</a>
+            <a class="nav-link" href="#ml-concepts">ML Concepts</a>
+            <a class="nav-link" href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <body>
+        <div id="video-div">
+            <h2>Where to get started with Machine Learning</h2>
+            <iframe id= "video" width="420" height="315" src="https://www.youtube.com/embed/_Z9TRANg4c0"></iframe>
+        </div>
+
+        <div class="ml-uses" id="ml-uses">
+            <h2>What can you do with Machine Learning?</h2>
+            <p>There are numerous fields in which machine learning is used in. A list of them is below:</p>
+            <ul>
+                <li>Bioinformatics</li>
+                <li>Computer Vision</li>
+                <li>Natural Language Processing</li>
+                <li>Optimization</li>
+                <li>Sentiment Analysis</li>
+                <li>Software Engineering</li>
+                <li>Speech Recognition</li>
+                <li>Times-series forecasting</li>
+            </ul>
+        </div>
+        <!--Information for next div element is at https://towardsdatascience.com/-->
+        <div class="ml-concepts" id="ml-concepts">
+            <h2>Machine learning is made up </h2>
+            <p>
+                Key elements of machine learning are representation, evaluation, and optimization.
+                In addition, there are four types of machine learning:
+            </p>
+            <ul>
+                <li>
+                    Supervised learning
+                    <ul>
+                        <li>Nearest Neighbor</li>
+                        <li>Naive Bayes</li>
+                        <li>Decision Trees</li>
+                        <li>Linear Regression</li>
+                        <li>Support Vector Machines</li>
+                        <li>Neural Networks</li>
+                    </ul>
+                </li>
+                <li>
+                    Unsupervised learning
+                    <ul>
+                        <li>k-means clustering</li>
+                        <li>Association Rules</li>
+                    </ul>
+                </li>
+                <li>
+                    Semi-supervised learning
+                </li>
+                <li>
+                    Reinforcement learning
+                    <ul>
+                        <li>Q-Learning</li>
+                        <li>Temporal Difference</li>
+                        <li>Deep Adversarial Networks</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <h2 id="projects-title">Machine Learning Projects</h2>
+        <div id="projects">
+            <div class="ml-project" id="house-prices">
+                <div>FREE</div><br>
+                <h3 id="ml-project-title">
+                    Predicting House Prices
+                </h3>
+                <p>Practice feature engineering and advanced regression techniques to predict final price of homes</p>
+                <a id="more-info" href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques">Start project</a>
+            </div>
+            
+            <div class="ml-project" id="titanic-survival">
+                <div>FREE</div><br>
+                <h3 id="ml-project-title">
+                    Predicting survival<br> on Titanic
+                </h3>
+                <p>Use machine learning to create model for survival prediction on Titanic shipwreck</p>
+                <a id="more-info" href="https://www.kaggle.com/c/titanic">Start project</a>
+            </div>
+            
+            <div class="ml-project" id="digit-recognizer">
+                <div>FREE</div><br>
+                <h3 id="ml-project-title">
+                    Predicting digits<br> from drawings
+                </h3>
+                <p>Practice computer vision fundamentals(neural networks) and classification methods</p>
+                <a id="more-info" href="https://www.kaggle.com/c/digit-recognizer">Start project</a>
+            </div>
+       
+        </div>
+
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p>Enter your email below to learn get more information about Machine Learning</p>
+            <input id="email" type="email" placeholder="Enter your email address" name="email"><br>
+            <input id="submit" type="submit" value="SUBMIT" name="SUBMIT">
+        </form>
+    </body>
+</html>

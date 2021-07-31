@@ -154,6 +154,9 @@ head{
 }
 
 /*Following code is for personal projects part of site*/
+#personalprojects-title{
+    text-align: center;
+}
 .main-personalprojects{
     background-color: rgb(202, 202, 202);
     display:grid;
@@ -161,7 +164,7 @@ head{
     grid-template-rows: 1fr 1fr  ;
     grid-row-gap:10px;
     grid-column-gap:10px;
-    margin:0 20%;
+    margin:0 10%;
 }
 
 .main-personalprojects section{
@@ -176,7 +179,22 @@ head{
 
 #projects-list{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap:5px;
+}
+
+#projects-list div{
+    grid-column:span 1;
+    background-color: rgb(114, 114, 114);
+}
+
+#projects-list div h3{
+    color: rgb(88, 182, 182);
+}
+
+#projects-list div img{
+    width:100%;
+    margin: 0 auto;
 }
 
 /*Following code is for Courses part of site*/
