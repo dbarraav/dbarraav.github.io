@@ -81,16 +81,19 @@ head{
 #about-me{
     grid-column:2/4;
     grid-row:1/2;
+    top:0;
 }
 
 #research-interests{
     grid-column:2/4;
     grid-row:2/3;
+    top:0;
 }
 
 #education{
     grid-column:2/4;
     grid-row:3/4;
+    top:0;
 }
 
 @media (max-width:1000px){
