@@ -77,6 +77,11 @@ head{
     background-color: rgb(109, 169, 224);
 }
 
+#description-home a svg{
+    width: 16px;;
+    height:16px;
+    fill:currentColor;
+}
 
 #about-me{
     grid-column:2/4;
@@ -183,6 +188,11 @@ head{
     margin:0 10%;
 }
 
+@media(max-width:750px){
+    .main-personalprojects{
+        margin:0 2%;
+    }
+}
 .main-personalprojects section{
     background-color: rgb(190, 190, 190);
     text-align: center;
