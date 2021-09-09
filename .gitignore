@@ -1,2 +1,3 @@
 # The .vs folder contains settings, task configuration, and debug configuration that can be included if I was working with a team.
 .vs/
+.DS_Store
