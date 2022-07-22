@@ -76,8 +76,14 @@ head{
 }
 
 #description-home a::after{
-    width:0%
-}
+    content:'';
+    width:0%;
+    height:2px;
+    background:#00000081;
+    display:block;
+    margin:auto;
+    transition: 0.5s;}
+    
 #description-home a:hover::after{
     /* background-color: rgb(109, 169, 224); */
     width:100%;
