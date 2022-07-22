@@ -75,8 +75,13 @@ head{
     color:black;
 }
 
-#description-home a:hover{
-    background-color: rgb(109, 169, 224);
+#description-home a::after{
+    width:0%
+}
+#description-home a:hover::after{
+    /* background-color: rgb(109, 169, 224); */
+    width:100%;
+    transition: 0.5s;
 }
 
 #description-home a svg{
