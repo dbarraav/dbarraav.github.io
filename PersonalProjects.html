@@ -2,6 +2,58 @@
 <html>
   <head>
     <link rel="stylesheet" href="main.css">
+    <style>
+      /* Page-specific overrides to support the new side-by-side project sections using existing styles */
+      .main-personalprojects {
+        display: block !important;
+        margin: 0 15% !important;
+        background-color: transparent !important;
+      }
+      #personalprojects {
+        background-color: transparent !important;
+      }
+      #projects-list {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+      }
+      #projects-list div.project-card {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        background-color: rgb(190, 190, 190);
+        padding: 20px;
+        gap: 20px;
+        text-align: left;
+      }
+      .project-image-box {
+        flex: 0 0 35% !important;
+      }
+      .project-image-box img {
+        width: 100% !important;
+        height: auto;
+        display: block;
+      }
+      .project-content-box {
+        flex: 1 !important;
+      }
+      .project-content-box h3 {
+        margin-top: 0;
+        color: rgb(88, 182, 182);
+      }
+      .project-content-box p {
+        color: #333;
+        line-height: 1.5;
+      }
+      @media (max-width: 768px) {
+        #projects-list div.project-card {
+          flex-direction: column !important;
+        }
+        .project-image-box {
+          width: 100% !important;
+        }
+      }
+    </style>
     <nav id="nav-links">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -17,40 +69,59 @@
   <body>
     <h1 id="personalprojects-title">Personal Projects</h1>
     <main class="main-personalprojects">
-        <section id="personalprojects" >
-            <h2>Web Design Projects</h2>
+        <section id="personalprojects">
             <div id="projects-list">
-              <div>
-                <h3>Tribute Page</h3>
-                <a href="PersonalProjects/WebDesignProjects/TributePage.html"><img src="images/TributePage.PNG"></a>
+              
+              <!-- Project 1 -->
+              <div class="project-card">
+                <div class="project-image-box">
+                  <img src="images/tractForcProj.png" alt="page"></a>
+                </div>
+                <div class="project-content-box">
+                  <h3>Microscale matrix defects suppress tension-dependent protrusions and stall collective cell migration</h3>
+                  <p><strong>Abstract / Description:</strong> Responsible for running traction force microscopy for some of the experiments.</p>
+                  <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00832-6">View Project &rarr;</a>
+                </div>
               </div>
 
-              <div>
-                <h3>Survey Form</h3>
-                <a href="PersonalProjects/WebDesignProjects/SurveyForm.html"><img src="images/SurveyForm.PNG"></a>
+              <!-- Project 2 -->
+              <div class="project-card">
+                <div class="project-image-box">
+                  <img src="images/cellCommProj.png" alt="Survey Form"></a>
+                </div>
+                <div class="project-content-box">
+                  <h3>Cadherin-1-mediated communication at the leader-follower boundary controls mouse breast tumor organoid collective migration</h3>
+                  <p><strong>Abstract / Description:</strong> Responsible for running Agent-based modeling simulations</p>
+                  <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(25)01403-2">View Project &rarr;</a>
+                </div>
               </div>
 
-              <div>
-                <h3>Product Landing Page</h3>
-                <a href="PersonalProjects/WebDesignProjects/ProductLandingPage.html"><img src="images/ProductLandingPage.PNG"></a>
+              <!-- Project 3 -->
+              <div class="project-card">
+                <div class="project-image-box">
+                  <!-- <img src="images/ProductLandingPage.PNG" alt="Product Landing Page"></a> -->
+                </div>
+                <div class="project-content-box">
+                  <h3>History of hypoxia exposure aids future cell invasion according to cell type and collagen density</h3>
+                  <p><strong>Abstract / Description:</strong> Responsible for code in cell migration directionality analysis</p>
+                  <a href="https://www.molbiolcell.org/doi/10.1091/mbc.E24-12-0580">View Project &rarr;</a>
+                </div>
               </div>
 
-              <div>
-                <h3>Technical Documentation Page</h3>
-                <a href="PersonalProjects/WebDesignProjects/TechnicalDocumentationPage.html"><img src="images/TechnicalDocumentationPage.PNG"></a>
+              <!-- Project 4 -->
+              <div class="project-card">
+                <div class="project-image-box">
+                  <img src="images/hippoPathProj.png" alt="Technical Documentation Page"></a>
+                </div>
+                <div class="project-content-box">
+                  <h3>Control of tissue homeostasis, tumorigenesis, and degeneration by coupled bidirectional bistable switchess</h3>
+                  <p><strong>Abstract / Description:</strong> Responsible for running simulations</p>
+                  <a href="https://doi.org/10.1371/journal.pcbi.1009606">View Project &rarr;</a>
+                </div>
               </div>
 
-              <div>
-                <h3>Personal Portfolio</h3>
-                <a href="PersonalProjects/WebDesignProjects/PersonalPortfolio.html"><img src="images/PersonalPortfolio.PNG"></a>
-              </div>
             </div>
         </section>
-
-        <section>
-
-        </section>
-    
     </main>
   </body>
 </html>
